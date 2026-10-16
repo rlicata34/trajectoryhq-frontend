@@ -1,0 +1,95 @@
+/* Sidebar Container */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: #0f172a;
+  border-right: 1px solid #1e293b;
+}
+
+/* Logo and Branding */
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 20px;
+  text-decoration: none;
+}
+
+.sidebar__logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.sidebar__brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8fafc;
+  white-space: nowrap;
+}
+
+.sidebar__brand-accent {
+  color: #8b5cf6;
+}
+
+/* Navigation */
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 12px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hover State */
+
+.sidebar__link:hover {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* Active Navigation Link */
+
+.sidebar__link_active {
+  background-color: #312e81;
+  color: #c4b5fd;
+  font-weight: 600;
+}
+
+/* Navigation Icons */
+
+.sidebar__link svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Bottom Section */
+
+.sidebar__bottom {
+  margin-top: auto;
+  padding: 16px 12px;
+  border-top: 1px solid #1e293b;
+}
