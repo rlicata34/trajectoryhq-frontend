@@ -1,0 +1,150 @@
+:root {
+  /* -------------------------------------------------------------------------- */
+  /*                             COLORS - BACKGROUNDS                             */
+  /* -------------------------------------------------------------------------- */
+
+  --color-bg-primary: #080f19;
+  --color-bg-secondary: #0c1623;
+  --color-bg-tertiary: #111e2d;
+
+  --color-bg-sidebar: #0b1522;
+  --color-bg-card: #101c2b;
+  --color-bg-card-hover: #162438;
+
+  --color-bg-input: #192538;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                COLORS - TEXT                               */
+  /* -------------------------------------------------------------------------- */
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #c4cedd;
+  --color-text-muted: #8b9bb0;
+  --color-text-disabled: #596779;
+
+  /* -------------------------------------------------------------------------- */
+  /*                              COLORS - ACCENTS                              */
+  /* -------------------------------------------------------------------------- */
+
+  /* Primary brand colors */
+  --color-primary: #6366f1;
+  --color-primary-hover: #818cf8;
+  --color-primary-dark: #312e81;
+
+  /* Supporting accents */
+  --color-blue: #4f83ff;
+  --color-purple: #a855f7;
+  --color-green: #10d9a0;
+  --color-orange: #fb923c;
+  --color-yellow: #facc15;
+  --color-red: #ff4567;
+
+  /* -------------------------------------------------------------------------- */
+  /*                              COLORS - BORDERS                              */
+  /* -------------------------------------------------------------------------- */
+
+  --color-border: #233244;
+  --color-border-light: #304157;
+  --color-border-focus: #6366f1;
+
+  /* -------------------------------------------------------------------------- */
+  /*                               COLORS - STATUS                              */
+  /* -------------------------------------------------------------------------- */
+
+  --color-status-success: #10d9a0;
+  --color-status-warning: #facc15;
+  --color-status-error: #ff4567;
+  --color-status-info: #4f83ff;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                 TYPOGRAPHY                                 */
+  /* -------------------------------------------------------------------------- */
+
+  --font-family-primary: "Inter", sans-serif;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 2rem; /* 32px */
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   SPACING                                  */
+  /* -------------------------------------------------------------------------- */
+
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 0.75rem; /* 12px */
+  --spacing-lg: 1rem; /* 16px */
+  --spacing-xl: 1.5rem; /* 24px */
+  --spacing-2xl: 2rem; /* 32px */
+  --spacing-3xl: 3rem; /* 48px */
+
+  /* -------------------------------------------------------------------------- */
+  /*                               BORDER - RADIUS                              */
+  /* -------------------------------------------------------------------------- */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   SHADOWS                                  */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* -------------------------------------------------------------------------- */
+  /*                                 TRANSITIONS                                */
+  /* -------------------------------------------------------------------------- */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   LAYOUT                                   */
+  /* -------------------------------------------------------------------------- */
+
+  --sidebar-width: 224px;
+
+  --header-height: 72px;
+
+  --content-max-width: 1600px;
+
+  --page-padding: 32px;
+
+  --card-padding: 16px;
+
+  --grid-gap: 12px;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   Z-INDEX                                  */
+  /* -------------------------------------------------------------------------- */
+
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 900;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}
