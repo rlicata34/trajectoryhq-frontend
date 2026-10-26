@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 
 import "./ApplicationsHeader.css";
 
-function ApplicationsHeader() {
+function ApplicationsHeader({ onAddApplication }) {
   return (
     <div className="applications-header">
       <div className="applications-header__info">
@@ -11,7 +11,11 @@ function ApplicationsHeader() {
           Track and manage your job search pipeline.
         </p>
       </div>
-      <button className="applications-header__button" type="button">
+      <button
+        className="applications-header__button"
+        type="button"
+        onClick={onAddApplication}
+      >
         <Plus size={18} />
         Add Application
       </button>
