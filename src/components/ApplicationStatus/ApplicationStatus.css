@@ -1,0 +1,100 @@
+/* -------------------------------------------------------------------------- */
+/*                              APPLICATION STATUS                            */
+/* -------------------------------------------------------------------------- */
+
+.application-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--spacing-sm);
+
+  padding: var(--spacing-xs) var(--spacing-md);
+
+  background-color: var(--status-bg);
+  color: var(--status-color);
+
+  border: 1px solid var(--status-border);
+  border-radius: var(--radius-md);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+
+  white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 STATUS DOT                                 */
+/* -------------------------------------------------------------------------- */
+
+.application-status__dot {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  background-color: var(--status-color);
+
+  border-radius: var(--radius-full);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                STATUS COLORS                               */
+/* -------------------------------------------------------------------------- */
+
+/* Saved */
+
+.application-status--saved {
+  --status-color: var(--color-text-muted);
+  --status-bg: rgba(139, 155, 176, 0.1);
+  --status-border: rgba(139, 155, 176, 0.15);
+}
+
+/* Applied */
+
+.application-status--applied {
+  --status-color: var(--color-blue);
+  --status-bg: rgba(79, 131, 255, 0.12);
+  --status-border: rgba(79, 131, 255, 0.18);
+}
+
+/* Response */
+
+.application-status--response {
+  --status-color: var(--color-purple);
+  --status-bg: rgba(168, 85, 247, 0.12);
+  --status-border: rgba(168, 85, 247, 0.18);
+}
+
+/* Interviewing */
+
+.application-status--interviewing {
+  --status-color: var(--color-yellow);
+  --status-bg: rgba(250, 204, 21, 0.12);
+  --status-border: rgba(250, 204, 21, 0.18);
+}
+
+/* Offer */
+
+.application-status--offer {
+  --status-color: var(--color-green);
+  --status-bg: rgba(16, 217, 160, 0.12);
+  --status-border: rgba(16, 217, 160, 0.18);
+}
+
+/* Rejected */
+
+.application-status--rejected {
+  --status-color: var(--color-red);
+  --status-bg: rgba(255, 69, 103, 0.12);
+  --status-border: rgba(255, 69, 103, 0.18);
+}
+
+/* Withdrawn */
+
+.application-status--withdrawn {
+  --status-color: var(--color-text-muted);
+  --status-bg: rgba(139, 155, 176, 0.1);
+  --status-border: rgba(139, 155, 176, 0.15);
+}

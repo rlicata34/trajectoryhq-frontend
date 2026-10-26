@@ -1,3 +1,4 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import ApplicationRow from "../ApplicationRow/ApplicationRow";
 
 import "./ApplicationsTable.css";
@@ -32,13 +33,30 @@ function ApplicationsTable({ applications = [] }) {
       <div className="applications-table__footer">
         <p>Showing {applications.length} applications</p>
 
-        <div className="applications-table__pagination">
-          <button type="button">Previous</button>
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>
-          <button type="button">Next</button>
-        </div>
+        <nav
+          className="applications-table__pagination"
+          aria-label="Application pages"
+        >
+          <button type="button" aria-label="Previous page">
+            <ChevronLeft size={16} />
+          </button>
+
+          <button type="button" aria-label="Page 1" aria-current="page">
+            1
+          </button>
+
+          <button type="button" aria-label="Page 2">
+            2
+          </button>
+
+          <button type="button" aria-label="Page 3">
+            3
+          </button>
+
+          <button type="button" aria-label="Next page">
+            <ChevronRight size={16} />
+          </button>
+        </nav>
       </div>
     </div>
   );
