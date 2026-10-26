@@ -1,0 +1,94 @@
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-xl);
+}
+
+.applications-header__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.applications-header__title {
+  margin: 0;
+
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.applications-header__description {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+.applications-header__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+
+  padding: var(--spacing-md) var(--spacing-lg);
+
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+/* Hover */
+
+.applications-header__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Active */
+
+.applications-header__button:active {
+  transform: scale(0.98);
+}
+
+/* Keyboard Focus */
+
+.applications-header__button:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .applications-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+
+  .applications-header__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .applications-header__button {
+    width: 100%;
+  }
+}

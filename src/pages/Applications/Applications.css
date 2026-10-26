@@ -1,0 +1,29 @@
+.applications {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+
+  gap: var(--spacing-lg);
+}
+
+.applications__content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+
+  gap: var(--grid-gap);
+}
+
+@media (max-width: 768px) {
+  .applications {
+    gap: var(--spacing-md);
+  }
+
+  .applications__content {
+    gap: var(--spacing-md);
+  }
+}
