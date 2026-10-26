@@ -1,0 +1,229 @@
+.application-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(150px, 0.9fr) minmax(
+      170px,
+      0.9fr
+    ) auto;
+  align-items: end;
+
+  gap: var(--spacing-lg);
+
+  width: 100%;
+  min-width: 0;
+
+  padding: var(--card-padding);
+
+  background-color: var(--color-bg-card);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.application-filters__search {
+  display: flex;
+  align-items: center;
+
+  gap: var(--spacing-md);
+
+  min-width: 0;
+  height: 40px;
+
+  padding: 0 var(--spacing-md);
+
+  background-color: var(--color-bg-input);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  color: var(--color-text-muted);
+
+  transition: border-color var(--transition-fast);
+}
+
+.application-filters__search:focus-within {
+  border-color: var(--color-border-focus);
+}
+
+.application-filters__search svg {
+  flex-shrink: 0;
+}
+
+.application-filters__search input {
+  flex: 1;
+
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: var(--color-text-primary);
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xs);
+}
+
+.application-filters__search input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Remove the browser's default search clear button */
+
+.application-filters__search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.application-filters__field {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-xs);
+
+  min-width: 0;
+}
+
+.application-filters__field label {
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.application-filters__field select {
+  width: 100%;
+  height: 40px;
+
+  padding: 0 var(--spacing-md);
+
+  background-color: var(--color-bg-input);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  color: var(--color-text-primary);
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xs);
+
+  cursor: pointer;
+
+  transition: border-color var(--transition-fast);
+}
+
+.application-filters__field select:hover {
+  border-color: var(--color-border-light);
+}
+
+.application-filters__field select:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.application-filters__field select option {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.application-filters__views {
+  display: flex;
+  align-items: center;
+
+  gap: var(--spacing-xs);
+
+  height: 40px;
+
+  padding: var(--spacing-xs);
+
+  background-color: var(--color-bg-secondary);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.application-filters__view {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--spacing-sm);
+
+  height: 100%;
+
+  padding: 0 var(--spacing-md);
+
+  background-color: transparent;
+
+  border: none;
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+/* Hover */
+
+.application-filters__view:hover {
+  background-color: var(--color-bg-card-hover);
+  color: var(--color-text-primary);
+}
+
+/* Active View */
+
+.application-filters__view--active {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
+.application-filters__view--active:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Keyboard Focus */
+
+.application-filters__view:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Medium screens */
+
+@media (max-width: 1200px) {
+  .application-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .application-filters__views {
+    justify-self: start;
+  }
+}
+
+/* Small screens */
+
+@media (max-width: 600px) {
+  .application-filters {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .application-filters__views {
+    width: 100%;
+  }
+
+  .application-filters__view {
+    flex: 1;
+  }
+}
