@@ -3,7 +3,7 @@ import ApplicationRow from "../ApplicationRow/ApplicationRow";
 
 import "./ApplicationsTable.css";
 
-function ApplicationsTable({ applications = [] }) {
+function ApplicationsTable({ applications }) {
   return (
     <div className="applications-table">
       <table className="applications-table__table">

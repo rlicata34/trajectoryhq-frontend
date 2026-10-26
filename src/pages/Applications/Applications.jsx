@@ -2,6 +2,7 @@ import ApplicationsHeader from "../../components/ApplicationsHeader/Applications
 import ApplicationStats from "../../components/ApplicationStats/ApplicationStats";
 import ApplicationFilters from "../../components/ApplicationFilters/ApplicationFilters";
 import ApplicationsTable from "../../components/ApplicationsTable/ApplicationsTable";
+import { mockApplications } from "../../utils/mockApplications";
 
 import "./Applications.css";
 
@@ -12,7 +13,7 @@ function Applications() {
       <ApplicationStats />
       <section className="applications__content" aria-label="Job applications">
         <ApplicationFilters />
-        <ApplicationsTable />
+        <ApplicationsTable applications={mockApplications} />
       </section>
     </div>
   );
