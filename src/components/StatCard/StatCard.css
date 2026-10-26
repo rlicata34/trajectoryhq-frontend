@@ -1,0 +1,148 @@
+.stat-card {
+  display: flex;
+  align-items: flex-start;
+
+  gap: var(--spacing-lg);
+
+  min-width: 0;
+  min-height: 82px;
+
+  padding: var(--card-padding);
+
+  background-color: var(--color-bg-card);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.stat-card:hover {
+  background-color: var(--color-bg-card-hover);
+  border-color: var(--color-border-light);
+}
+
+.stat-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  border-radius: var(--radius-md);
+
+  color: var(--stat-color);
+  background-color: var(--stat-bg);
+}
+
+.stat-card__content {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  flex: 1;
+
+  gap: 2px;
+}
+
+.stat-card__title {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+
+  line-height: var(--line-height-normal);
+}
+
+.stat-card__value {
+  margin: 0;
+
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+
+  line-height: var(--line-height-tight);
+}
+
+.stat-card__description {
+  margin: 0;
+
+  color: var(--stat-color);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+
+  line-height: var(--line-height-normal);
+}
+
+.stat-card__chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  gap: 3px;
+
+  height: 44px;
+  width: 70px;
+
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.stat-card__bar {
+  flex: 1;
+
+  height: var(--bar-height);
+
+  background-color: var(--stat-color);
+
+  opacity: 0.75;
+
+  border-radius: 2px 2px 0 0;
+}
+
+/* Blue */
+
+.stat-card--blue {
+  --stat-color: var(--color-blue);
+  --stat-bg: rgba(79, 131, 255, 0.12);
+}
+
+/* Orange */
+
+.stat-card--orange {
+  --stat-color: var(--color-orange);
+  --stat-bg: rgba(251, 146, 60, 0.12);
+}
+
+/* Green */
+
+.stat-card--green {
+  --stat-color: var(--color-green);
+  --stat-bg: rgba(16, 217, 160, 0.12);
+}
+
+/* Purple */
+
+.stat-card--purple {
+  --stat-color: var(--color-purple);
+  --stat-bg: rgba(168, 85, 247, 0.12);
+}
+
+@media (max-width: 600px) {
+  .stat-card {
+    min-height: 90px;
+  }
+
+  .stat-card__chart {
+    width: 80px;
+  }
+}
